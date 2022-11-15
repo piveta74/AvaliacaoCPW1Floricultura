@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'bold';
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'light';
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'logo';
+    src: url(../fonts/DancingScript-Regular.ttf);
+}

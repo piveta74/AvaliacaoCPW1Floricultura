@@ -1,0 +1,252 @@
+:root {
+    --hero-image: url('../img/back.jpg');
+  }
+  
+  body {
+    margin: 0;
+    background-image: url('../img/background.gif');
+  }
+  
+  nav {
+    display: flex;
+    background: #FF8FAF;
+    margin: 0% 5% 0 5%;
+    padding: 20px;
+    column-gap: 10px;
+    align-items: center;
+  }
+  
+  nav span {
+    color: white;
+    font-family: 'logo';
+    font-size: 200%;
+  }
+  
+  nav a:first-of-type {
+    margin-left: auto;
+  }
+  
+  nav a {
+    color: #ffffff;
+    font-family: 'bold';
+    text-decoration: none;
+    font-size: 150%;
+  }
+  
+  nav a:hover {
+    color: #CC3560;
+  }
+  
+  #firstTitle {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+    var(--hero-image);
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 10px;
+    margin: 0% 5% 0 5%;
+    position: relative;
+  }
+  
+  #firstTitle-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: center;
+    width: 80%;
+  }
+  
+  #firstTitle-text h1 {
+    margin: 0;
+    font-family: 'logo';
+    font-size: 500%;
+  }
+  
+  #firstTitle-text p {
+    font-family: 'light';
+    font-size: 200%;
+  }
+  
+  .sobre {
+    display: flex;
+    padding: 50px 30px;
+    margin: 0% 5% 0 5%;
+    background-color: #FF8FAF;
+    color: white;
+    
+  }
+  
+  .sobre:nth-child(even) {
+    background-color: white;
+    flex-direction: row-reverse;
+    color: black;
+  }
+  
+  .sobre-esquerda {
+    width: 70%;
+  }
+  
+  .sobre-esquerda h1 {
+    font-family: 'bold';
+  }
+  
+  .sobre-esquerda p {
+    font-family: 'light';
+    font-size: 120%;
+  }
+  
+  .sobre-direita {
+    width: 30%;
+    text-align: center;
+  }
+  
+  .sobre-direita img {
+    width: 200px;
+  }
+  
+  #animacao {
+    animation: scale-out-center 0.6s linear reverse forwards;
+    opacity: 0;
+    
+  }
+  .sobre:hover #animacao {
+   
+    animation: scale-in-center 0.6s ease-out forwards;
+    opacity: 1;
+  }
+  
+  .valores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  
+
+
+  .valores-espaco:nth-child(1):hover {
+    animation: scale-up-center 1s forwards;
+  }
+  
+  .valores-espaco:nth-child(2):hover {
+    animation: scale-up-center 1s forwards;
+  }
+  
+  .valores-espaco:nth-child(3):hover {
+    animation: scale-up-center 1s forwards;
+  }
+  
+  .valores-espaco {
+    width: 25%;
+    margin: 0 5% 30px 5%;
+    text-align: center;
+    padding: 2%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 20px #d9d9d9;
+    background-color: #fff;
+  }
+  
+  .valores-espaco:nth-child(1) {
+    animation: none;
+  }
+  
+  .valores-espaco:nth-child(2) {
+    animation: none;
+  }
+  
+  .valores-espaco:nth-child(3) {
+    animation: none;
+  }
+  
+  .valores-espaco img {
+    border-radius: 10px;
+    width: 80%;
+  }
+  
+  .valores-espaco h1 {
+    font-family: 'bold';
+  }
+  
+  .valores-espaco p {
+    font-family: 'light';
+  }
+  
+  footer {
+    background-color:#FF8FAF;
+    margin-top: 30px;
+    padding: 30px 20px;
+    margin: 0 5% 0% 5%;
+    display: flex;
+    align-items: baseline;
+    color: white;
+  }
+  
+  #copyright {
+    margin-right: 40px;
+  }
+  
+  #copyright span {
+    font-family: 'bold';
+  }
+  
+  #endereco {
+    font-family: 'light';
+  }
+  
+  #endereco h3 {
+    font-family: 'bold';
+  }
+  
+  #galeria{
+    padding: 50px 30px;
+    margin: 0% 5% 0 5%;
+    background-color: rgb(255, 255, 255);
+    color: #FF8FAF;
+  }
+
+  .galeriafoto{
+    display: flex;
+    padding-bottom: 5%;
+  }
+
+  .galeriafoto h3{
+    margin: 10% 3% 0 0;
+    font-size: 200%;
+    font-family: 'logo';
+
+  }
+
+  .galeriafoto p{
+    margin: 10% 3% 0 0;
+    font-size: 150%;
+    font-family: 'bold';
+  }
+
+  .galeriafoto img{
+    width: 30%;
+    margin-left: auto;
+  }
+
+  #botao{
+    margin: 0% 5% 5% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #botao button{
+    border-radius: 12px;
+    font-size: 35px;
+    font-family: 'bold';
+    background-color: #FF8FAF;
+    color: white;
+    border: none;
+    padding: 30px;
+    cursor: pointer;
+  }
+
+  #botao button:hover{
+    background-color: #CC3560;
+  }
